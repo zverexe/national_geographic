@@ -139,7 +139,6 @@ input.empty {
   outline: none;
   height: 30px;
   font-size: 14px;
-  width: 98%;
   display: flex;
   align-items: center;
   margin-bottom: 2%; }
@@ -321,7 +320,8 @@ input.empty {
   float: right;
   padding-left: 10px; }
   .news-bar-content .most-popular,
-  .news-bar-content .most-popular-2, .news-bar-content .most-popular-3 {
+  .news-bar-content .most-popular-2,
+  .news-bar-content .most-popular-3 {
     display: flex;
     height: 30px;
     border: 1px solid #eeeeee;
@@ -340,11 +340,13 @@ input.empty {
   .news-bar-content .most-popular-3 {
     margin-top: 1%; }
   .news-bar-content .most-popular img,
-  .news-bar-content .most-popular-2 img, .news-bar-content .most-popular-3 img {
+  .news-bar-content .most-popular-2 img,
+  .news-bar-content .most-popular-3 img {
     padding-left: 6px;
     padding-right: 6px; }
   .news-bar-content .most-popular p,
-  .news-bar-content .most-popular-2 p, .news-bar-content .most-popular-3 p {
+  .news-bar-content .most-popular-2 p,
+  .news-bar-content .most-popular-3 p {
     margin-bottom: 0px; }
   .news-bar-content .news-bar-items {
     border: 1px solid #eeeeee;
@@ -360,16 +362,49 @@ input.empty {
   .news-bar-content .news-bar-items-content p {
     font-size: 10px;
     padding-top: 0px; }
+  .news-bar-content .news-bar-items-content #carousel-8 .carousel-caption {
+    position: relative;
+    left: 10%;
+    padding-top: 0px;
+    padding-bottom: 0px; }
+  .news-bar-content .news-bar-items-content #carousel-8 p {
+    margin-top: -3%; }
   .news-bar-content .votes {
     position: absolute;
     right: 5px;
-    top: 150px; }
+    top: 190px; }
   .news-bar-content .votes p:first-child {
     margin-top: 10%;
     margin-bottom: 0px; }
+  .news-bar-content .news-bar-buttons {
+    display: flex;
+    justify-content: space-between; }
+    .news-bar-content .news-bar-buttons .subscribtion,
+    .news-bar-content .news-bar-buttons .shopping {
+      display: flex;
+      align-items: center;
+      border: 1px solid #eeeeee;
+      padding: 5px;
+      color: #777777;
+      font-size: 12px; }
+      .news-bar-content .news-bar-buttons .subscribtion h5,
+      .news-bar-content .news-bar-buttons .shopping h5 {
+        font-size: 12px; }
+    .news-bar-content .news-bar-buttons .shopping {
+      padding-right: 10px; }
+      .news-bar-content .news-bar-buttons .shopping h5 {
+        padding-left: 6%;
+        border-left: 1px solid #eeeeee;
+        margin-left: 7%; }
+    .news-bar-content .news-bar-buttons .subscribtion {
+      padding-right: 10px; }
+      .news-bar-content .news-bar-buttons .subscribtion i {
+        padding-right: 5%;
+        margin-right: 5%;
+        border-right: 1px solid #eeeeee; }
 
 .main-content-2 {
-  margin-top: -90%; }
+  margin-top: -98%; }
 
 .items-second {
   margin-top: 2%; }
@@ -381,9 +416,6 @@ input.empty {
   .items-first .items:first-child,
   .items-second .items:first-child {
     margin-right: 12px; }
-  .items-first .items:last-child,
-  .items-second .items:last-child {
-    margin-right: 1.5%; }
   .items-first .items img,
   .items-second .items img {
     width: 327px;
@@ -615,7 +647,11 @@ footer {
   .search-bar select {
     left: 47%; }
   .main-content-2 {
-    margin-top: -85%; } }
+    margin-top: -95%; }
+  .news-bar-content .votes {
+    position: absolute;
+    right: 5px;
+    top: 150px; } }
 
 /* start media 992px */
 @media screen and (max-width: 992px) {
@@ -642,7 +678,8 @@ footer {
   .main-container .top-news .col-sm-3 {
     padding-left: 0px; }
   .news-bar-content .most-popular,
-  .news-bar-content .most-popular-2, .news-bar-content .most-popular-3 {
+  .news-bar-content .most-popular-2,
+  .news-bar-content .most-popular-3 {
     font-size: 10px; }
   .news-bar-content .most-popular-3 {
     margin-top: 9%; }
@@ -656,6 +693,10 @@ footer {
     padding-top: 0px; }
   .news-bar-content .news-bar-items-content .votes {
     top: 110px; }
+  .news-bar-content .news-bar-buttons {
+    flex-direction: column; }
+    .news-bar-content .news-bar-buttons .shopping, .news-bar-content .news-bar-buttons .subscribtion {
+      margin-top: 1%; }
   .right-categories-list {
     border-right: none;
     padding-right: 0%; }
@@ -693,7 +734,7 @@ footer {
       .items-second .items .img-responsive {
         display: inline; }
   .main-content-2 {
-    margin-top: -80%; }
+    margin-top: -99%; }
   .bottom-content #lightSlider .lSliderCover {
     font-size: 12px; }
     .bottom-content #lightSlider .lSliderCover .img-responsive {
