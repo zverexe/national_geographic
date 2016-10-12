@@ -61,36 +61,27 @@ body {
   padding-top: -15px;
   border-top: 5px solid #777777;
   text-align: center; }
-  .categories a {
+  .categories .categories-items {
     padding-top: -10px;
     margin-top: -15px;
     width: 71px;
-    height: 30px;
-    background-color: #fbfbfb;
-    text-align: center;
-    text-decoration: none; }
-  .categories p {
-    margin-top: 10px;
-    text-align: center;
-    color: #555555;
-    font-size: 16px;
-    font-family: "MyriadProSemiBold"; }
-  .categories i {
-    color: #777777; }
-
-.home:hover i,
-.video:hover i,
-.camera:hover i,
-.plane:hover i,
-.recycle:hover i,
-.television:hover i,
-.child:hover i,
-.bicycle:hover i,
-.recycle:hover i {
-  color: #fdcc05; }
-
-.categories a:hover p {
-  color: #fdcc05; }
+    background-color: #fbfbfb; }
+    .categories .categories-items a {
+      height: 30px;
+      text-align: center;
+      text-decoration: none; }
+      .categories .categories-items a p {
+        margin-top: 10px;
+        text-align: center;
+        color: #555555;
+        font-size: 16px;
+        font-family: "MyriadProSemiBold"; }
+    .categories .categories-items i {
+      color: #777777; }
+    .categories .categories-items:hover {
+      cursor: pointer; }
+      .categories .categories-items:hover i, .categories .categories-items:hover p {
+        color: #fdcc05; }
 
 input.empty {
   font-family: FontAwesome;

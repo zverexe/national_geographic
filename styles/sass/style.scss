@@ -22,40 +22,32 @@ body {
     padding-top: -15px;
     border-top: 5px solid #777777;
     text-align: center;
-    a {
+    .categories-items {
         padding-top: -10px;
         margin-top: -15px;
         width: 71px;
-        height: 30px;
         background-color: #fbfbfb;
-        text-align: center;
-        text-decoration: none;
+        a {
+            height: 30px;
+            text-align: center;
+            text-decoration: none;
+            p {
+                margin-top: 10px;
+                text-align: center;
+                color: #555555;
+                @include myriad-semib;
+            }
+        }
+        i {
+            color: #777777;
+        }
+        &:hover{
+            cursor: pointer;
+            i,p{
+                color: #fdcc05;
+            }
+        }
     }
-    p {
-        margin-top: 10px;
-        text-align: center;
-        color: #555555;
-        @include myriad-semib;
-    }
-    i {
-        color: #777777;
-    }
-}
-
-.home:hover i,
-.video:hover i,
-.camera:hover i,
-.plane:hover i,
-.recycle:hover i,
-.television:hover i,
-.child:hover i,
-.bicycle:hover i,
-.recycle:hover i {
-    color: #fdcc05;
-}
-
-.categories a:hover p {
-    color: #fdcc05;
 }
 
 input.empty {
