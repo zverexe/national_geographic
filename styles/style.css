@@ -407,7 +407,7 @@ input.empty {
   margin-top: -98%; }
 
 .items-second {
-  margin-top: 2%; }
+  margin-top: 5%; }
 
 .items-first,
 .items-second {
@@ -700,6 +700,8 @@ footer {
   .right-categories-list {
     border-right: none;
     padding-right: 0%; }
+  .items-second {
+    margin-top: 2%; }
   #exTab1 .nav {
     text-align: center; }
   #exTab1 .nav-pills li {

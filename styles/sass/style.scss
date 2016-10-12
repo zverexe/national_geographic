@@ -469,7 +469,7 @@ input.empty {
 }
 
 .items-second {
-    margin-top: 2%;
+    margin-top: 5%;
 }
 
 .items-first,
@@ -865,6 +865,9 @@ footer {
         border-right: none;
         padding-right: 0%;
     }
+    .items-second {
+    margin-top: 2%;
+}
     #exTab1 {
         .nav {
             text-align: center;
