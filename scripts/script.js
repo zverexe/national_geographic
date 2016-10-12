@@ -30,10 +30,14 @@ $(document).ready(function() {
         enableDrag: false
 
     });
+
+    
     $('#goToPrevSlide').on('click', function() {
         slider.goToPrevSlide();
     });
     $('#goToNextSlide').on('click', function() {
         slider.goToNextSlide();
     });
+
+   
 });
