@@ -21,27 +21,40 @@ body {
     padding-top: -15px;
     border-top: 5px solid #777777;
     text-align: center;
-    a {
+    .categories-items {
         padding-top: -10px;
         margin-top: -15px;
         width: 71px;
         height: 30px;
         background-color: #fbfbfb;
         text-align: center;
-        text-decoration: none;
-    }
-    p {
-        margin-top: 10px;
-        text-align: center;
-        color: #555555;
-        @include myriad-semib;
-    }
-    i {
-        color: #777777;
+       
+        a {
+            //width: 71px;
+            // height: 30px;
+            background-color: #fbfbfb;
+            text-align: center;
+            text-decoration: none;
+        }
+        p {
+            margin-top: 10px;
+            text-align: center;
+            color: #555555;
+            @include myriad-semib;
+        }
+        i {
+            color: #777777;
+        }
+         &:hover {
+            
+            a,p{    background-color: #fdcc05;
+            }
+        }
     }
 }
 
-.home:hover i,
+
+/*.home:hover i,
 .video:hover i,
 .camera:hover i,
 .plane:hover i,
@@ -51,11 +64,12 @@ body {
 .bicycle:hover i,
 .recycle:hover i {
     color: #fdcc05;
-}
+}*/
 
-.categories a:hover p {
+
+/*.categories-items a:hover {
     color: #fdcc05;
-}
+}*/
 
 input.empty {
     font-family: FontAwesome;
@@ -242,6 +256,7 @@ input.empty {
         border: 1px solid #eeeeee;
         text-align: center;
         margin-top: 6px;
+        cursor: pointer;
     }
     li:first-child {
         margin-top: 0px;
@@ -479,7 +494,6 @@ input.empty {
     .items:first-child {
         margin-right: 12px;
     }
-    
     .items {
         img {
             width: 327px;
@@ -652,6 +666,7 @@ input.empty {
     .lSliderArrows {
         i {
             color: #eeeeee;
+            cursor: pointer;
         }
         #goToPrevSlide {
             padding-right: 7px;
@@ -854,11 +869,12 @@ footer {
                 top: 110px;
             }
         }
-        .news-bar-buttons {            
-                flex-direction: column;
-                .shopping, .subscribtion{
-                    margin-top: 1%;
-                }            
+        .news-bar-buttons {
+            flex-direction: column;
+            .shopping,
+            .subscribtion {
+                margin-top: 1%;
+            }
         }
     }
     .right-categories-list {
@@ -866,8 +882,8 @@ footer {
         padding-right: 0%;
     }
     .items-second {
-    margin-top: 2%;
-}
+        margin-top: 2%;
+    }
     #exTab1 {
         .nav {
             text-align: center;

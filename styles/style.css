@@ -61,24 +61,29 @@ body {
   padding-top: -15px;
   border-top: 5px solid #777777;
   text-align: center; }
-  .categories a {
+  .categories .categories-items {
     padding-top: -10px;
     margin-top: -15px;
     width: 71px;
     height: 30px;
     background-color: #fbfbfb;
-    text-align: center;
-    text-decoration: none; }
-  .categories p {
-    margin-top: 10px;
-    text-align: center;
-    color: #555555;
-    font-size: 16px;
-    font-family: "MyriadProSemiBold"; }
-  .categories i {
-    color: #777777; }
+    text-align: center; }
+    .categories .categories-items a {
+      background-color: #fbfbfb;
+      text-align: center;
+      text-decoration: none; }
+    .categories .categories-items p {
+      margin-top: 10px;
+      text-align: center;
+      color: #555555;
+      font-size: 16px;
+      font-family: "MyriadProSemiBold"; }
+    .categories .categories-items i {
+      color: #777777; }
+    .categories .categories-items:hover a, .categories .categories-items:hover p {
+      background-color: #fdcc05; }
 
-.home:hover i,
+/*.home:hover i,
 .video:hover i,
 .camera:hover i,
 .plane:hover i,
@@ -87,11 +92,11 @@ body {
 .child:hover i,
 .bicycle:hover i,
 .recycle:hover i {
-  color: #fdcc05; }
-
-.categories a:hover p {
-  color: #fdcc05; }
-
+    color: #fdcc05;
+}*/
+/*.categories-items a:hover {
+    color: #fdcc05;
+}*/
 input.empty {
   font-family: FontAwesome;
   font-size: 24px;
@@ -236,7 +241,8 @@ input.empty {
   background-color: #ffffff;
   border: 1px solid #eeeeee;
   text-align: center;
-  margin-top: 6px; }
+  margin-top: 6px;
+  cursor: pointer; }
 
 .left-categories-list li:first-child,
 .right-categories-list li:first-child {
@@ -559,7 +565,8 @@ input.empty {
     margin: 0px; }
 
 .bottom-content .lSliderArrows i {
-  color: #eeeeee; }
+  color: #eeeeee;
+  cursor: pointer; }
 
 .bottom-content .lSliderArrows #goToPrevSlide {
   padding-right: 7px;
@@ -695,7 +702,8 @@ footer {
     top: 110px; }
   .news-bar-content .news-bar-buttons {
     flex-direction: column; }
-    .news-bar-content .news-bar-buttons .shopping, .news-bar-content .news-bar-buttons .subscribtion {
+    .news-bar-content .news-bar-buttons .shopping,
+    .news-bar-content .news-bar-buttons .subscribtion {
       margin-top: 1%; }
   .right-categories-list {
     border-right: none;
