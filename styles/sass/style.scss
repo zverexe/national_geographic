@@ -1,12 +1,13 @@
 @import "_fonts.scss";
 
-/*main code*/
-
 body {
     background-color: #fbfbfb;
     padding-top: 40px;
     padding-bottom: 40px;
 }
+
+
+/* Header section */
 
 #header {
     .col-lg-2 {
@@ -25,13 +26,13 @@ body {
         padding-top: -10px;
         margin-top: -15px;
         width: 71px;
-        height: 30px;
         background-color: #fbfbfb;
         text-align: center;
-       
         a {
-            //width: 71px;
-            // height: 30px;
+            padding-top: -10px;
+            margin-top: -15px;
+            width: 71px;
+            height: 30px;
             background-color: #fbfbfb;
             text-align: center;
             text-decoration: none;
@@ -40,36 +41,20 @@ body {
             margin-top: 10px;
             text-align: center;
             color: #555555;
-            @include myriad-semib;
+            @include myriad-semib-16;
         }
         i {
             color: #777777;
         }
-         &:hover {
-            
-            a,p{    background-color: #fdcc05;
+        &:hover {
+            cursor: pointer;
+            i,
+            p {
+                color: #fdcc05;
             }
         }
     }
 }
-
-
-/*.home:hover i,
-.video:hover i,
-.camera:hover i,
-.plane:hover i,
-.recycle:hover i,
-.television:hover i,
-.child:hover i,
-.bicycle:hover i,
-.recycle:hover i {
-    color: #fdcc05;
-}*/
-
-
-/*.categories-items a:hover {
-    color: #fdcc05;
-}*/
 
 input.empty {
     font-family: FontAwesome;
@@ -91,6 +76,7 @@ input.empty {
         border: 1px solid #DDDDDD;
         outline: none;
         height: 45px;
+        
     }
     button[type="submit"] {
         position: absolute;
@@ -108,6 +94,7 @@ input.empty {
         border-bottom: 0;
         outline: none;
         color: #dfdfdf;
+        @include myriad-relular-15;
     }
 }
 
@@ -119,13 +106,11 @@ input.empty {
 
 .search-form_3 {
     padding: 10px;
-    //width: 100%;
     border-radius: 1px;
     border: 1px solid #DDDDDD;
     outline: none;
     height: 30px;
     font-size: 14px;
-    //width: 98%;
     display: flex;
     align-items: center;
     margin-bottom: 2%;
@@ -156,7 +141,6 @@ input.empty {
         margin-bottom: 0px;
     }
     .grid-list {
-        //position: absolute;
         li:last-child {
             margin-left: 0px;
         }
@@ -195,7 +179,6 @@ input.empty {
 .login-bar {
     background-color: #ffffff;
     border: 1px solid #DDDDDD;
-    //width:150px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -215,14 +198,25 @@ input.empty {
     p {
         margin: 0 0 0px;
         color: #999999;
+        @include myriad-relular-14;
     }
     ul {
         text-align: center;
     }
+    .dropdown-menu{
+        @include myriad-relular-14;
+    
+    }
 }
 
+/* End Header Section */
+
+
+
+/* Main Content section */ 
+
 .main-container {
-    margin-top: 5%;
+    margin-top: 2%;
 }
 
 .left-categories {
@@ -265,6 +259,9 @@ input.empty {
         a {
             color: #777;
             text-decoration: none;
+            p{
+                @include myriad-relular-12;
+            }
         }
     }
     li {
@@ -325,10 +322,7 @@ input.empty {
     }
     li {
         margin-left: 2px;
-    }
-    /*li:first-child {
-        margin-left: 0%;
-    }*/
+    }    
 }
 
 .tab-content {
@@ -354,12 +348,27 @@ input.empty {
             left: auto;
             right: auto;
             text-align: left;
+            text-shadow: none;
+            h4{
+                @include myriad-semib-15;
+                color: #555555;
+            }
+            p{
+                @include myriad-relular-11;
+                                color: #555555;
+
+            }
         }
         .carousel-indicators {
             bottom: 150px;
         }
     }
 }
+
+/* End Main Content section */ 
+
+
+/*Right Bar content Section */
 
 .news-bar-content {
     float: right;
@@ -400,6 +409,7 @@ input.empty {
         }
         p {
             margin-bottom: 0px;
+            @include myriad-semib-12;
         }
     }
     .news-bar-items {
@@ -417,6 +427,7 @@ input.empty {
         h5 {
             font-size: 13px;
             margin-bottom: 0px;
+            @include myriad-semib-13;
         }
         p {
             font-size: 10px;
@@ -438,6 +449,7 @@ input.empty {
         position: absolute;
         right: 5px;
         top: 190px;
+        @include myriad-relular-10;
     }
     .votes {
         p:first-child {
@@ -479,6 +491,12 @@ input.empty {
     }
 }
 
+
+/* End Right Bar content section */
+
+
+/* Main-content-2 Section */
+
 .main-content-2 {
     margin-top: -98%;
 }
@@ -495,19 +513,22 @@ input.empty {
         margin-right: 12px;
     }
     .items {
+
         img {
             width: 327px;
             height: auto;
             padding: 4px;
         }
-        h5 {
-            font-size: 13px;
+        h5 {            
             margin-bottom: 0px;
+            @include myriad-semib-14;
+
         }
-        p {
-            font-size: 10px;
+        p {            
             padding-top: 0px;
-        }
+                            @include  myriad-relular-12;
+                            color: #989898;
+                                 }
         .votes {
             float: right;
         }
@@ -546,9 +567,7 @@ input.empty {
             flex-direction: column;
             justify-content: center;
         }
-        .col-md-9 {
-            padding-left: 2%;
-        }
+        
     }
 }
 
@@ -636,6 +655,11 @@ input.empty {
     background-color: #444;
 }
 
+
+/* End ain-content-2 Section */
+
+/* Footer */
+
 .bottom-content {
     margin-top: 2%;
     padding-top: 2%;
@@ -651,6 +675,7 @@ input.empty {
         align-items: center;
         padding: 1%;
         margin-bottom: 2%;
+
         img {
             padding-right: 3%;
         }
@@ -661,6 +686,7 @@ input.empty {
         width: 50%;
         p {
             margin: 0px;
+            @include myriad-semib-12;
         }
     }
     .lSliderArrows {
@@ -699,15 +725,20 @@ input.empty {
             .img-responsive {
                 display: inline;
             }
+            p{
+                @include myriad-semib-12;
+            }
         }
         .lSliderFooter {
             display: flex;
             justify-content: space-between;
             .votes {
                 margin-top: 5%;
-                p {
-                    margin: 0 0 1px;
-                    font-size: 11px;
+                p{                    margin: 0 0 1px;
+               
+            }
+             p:last-child {                    
+                    @include myriad-relular-11;
                 }
             }
             .lSliderSubscribe {
@@ -717,9 +748,11 @@ input.empty {
                 border-right: 1px solid #eeeeee;
                 align-items: center;
                 margin-top: 5%;
+                padding: 5px;
                 p {
-                    margin: 0 0 1px;
+                    margin: 0 0 0px;
                     margin-left: 10px;
+                    @include myriad-relular-12;
                 }
             }
         }
@@ -740,6 +773,7 @@ footer {
             border: none;
             color: #848484;
             padding: 5px;
+            @include myriad-relular-14;
         }
         button[type="submit"] {
             position: absolute;
@@ -747,6 +781,7 @@ footer {
             right: 8%;
             background-color: #1f1f1f;
             color: #848484;
+            @include myriad-semib-13;
         }
     }
     .social-media {
@@ -770,10 +805,22 @@ footer {
                 color: #bbbbbb;
                 cursor: pointer;
                 text-decoration: none;
+                @include myriad-relular-12;
             }
         }
     }
+    p{
+        @include myriad-relular-11;
+    }
 }
+
+
+
+/* End Footer */
+
+
+/* Start media  styles */
+/*Media 1200*/
 
 @media screen and (max-width:1200px) {
     .search-bar {
@@ -794,7 +841,21 @@ footer {
 }
 
 
-/* start media 992px */
+/* End  media 1200 */
+
+
+/*Media 1100 */
+
+@media screen and (max-width: 1100px) {
+    .left-categories ul:last-child {
+        padding-right: 8%;
+    }
+}
+
+/*End media 1100 */
+
+
+/*Media 992 */
 
 @media screen and (max-width:992px) {
     .youtubeVideo::before {
@@ -949,20 +1010,10 @@ footer {
     }
 }
 
-
 /*end media 992 */
 
 
-/*media  1200 */
-
-
-/*end media 1200 */
-
-@media screen and (max-width: 1100px) {
-    .left-categories ul:last-child {
-        padding-right: 8%;
-    }
-}
+/* Media 767 */
 
 @media screen and (max-width:767px) {
     .logo {
@@ -989,8 +1040,7 @@ footer {
     }
     .login-bar {
         float: none;
-        margin-top: 4%;
-        //width: 50%;
+        margin-top: 4%;        
         margin-left: auto;
         margin-right: auto;
     }
@@ -1010,7 +1060,7 @@ footer {
     .news-bar-content {
         float: none;
         padding-left: 0px;
-        // margin-top: 20%;
+        margin-top: 15%;
         .most-popular-news {
             display: flex;
             flex-direction: column;
@@ -1119,6 +1169,25 @@ footer {
         height: 100px;
         margin: -50px 0 0 -50px;
     }
+    #exTab1 {
+        .tab-content {
+            margin-top: 19px;
+            .tab-pane {
+                #carousel,
+                #carousel-2,
+                #carousel-3,
+                #carousel-4,
+                #carousel-5,
+                #carousel-6 {
+                    .item {
+                        img {
+                            height: 315px;
+                        }
+                    }
+                }
+            }
+        }
+    }
     .bottom-content {
         #lightSlider {
             .lSliderFooter {
@@ -1171,6 +1240,11 @@ footer {
     }
 }
 
+/* End media 767 */
+
+
+/*Media 691 */
+
 @media screen and (max-width:691px) {
     .categories {
         a {
@@ -1181,6 +1255,11 @@ footer {
         }
     }
 }
+
+/*End media 691 */
+
+
+/*Media 530 */
 
 @media screen and (max-width:530px) {
     .categories {
@@ -1193,4 +1272,32 @@ footer {
             padding-right: auto;
         }
     }
+    #exTab1 {
+        .tab-content {
+           
+            .tab-pane {
+                #carousel,
+                #carousel-2,
+                #carousel-3,
+                #carousel-4,
+                #carousel-5,
+                #carousel-6 {
+                    .item {
+                        img {
+                            height: 215px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        .footer-form {
+            button[type="submit"] {
+                right: 5%;
+            }
+        }
+    }
 }
+
+/*end Media 530 */
